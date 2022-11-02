@@ -1,16 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
 }
 
+/* Header */
+
 header {
   background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  padding: 1rem 0;
+}
+
+/* Text */
+
+.title {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #c4c4c4;
+  color: #005677;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .principal-title {
-  background-color: #c4c4c4;
-  color: #005677;
-  letter-spacing: 10px;
-  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding: 0.5rem 0;
   text-align: center;
+  font-size: 35px;
+}
+
+.subtitle {
+  letter-spacing: 5px;
+  padding: 0.3rem 0 0.3rem 1rem;
+  font-size: 20px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+/* Main */
+
+main {
+  margin: 10rem 0;
+}
+
+/* Sections */
+
+.personal-section,
+.academic-section,
+.work-section {
+  margin-bottom: 2rem;
+}
+
+.personal-section p,
+.academic-section p,
+.work-section p {
+  margin: 0;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.academic-section .section-content,
+.work-section .section-content {
+  list-style: none;
+  padding-inline-start: 1.5rem;
+}
+
+.academic-section .section-content li,
+.work-section .section-content li {
+  display: flex;
+  gap: 0.5rem;
+}
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 37px;
+  padding: 0.5rem 0;
+  background-color: #005677;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.rrss {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+}
+
+.rrss a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
