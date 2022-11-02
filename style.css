@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  background-color: #e6e6e6;
+}
+
+.principal-title {
+  background-color: #c4c4c4;
+  color: #005677;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
